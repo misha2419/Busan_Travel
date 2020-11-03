@@ -14,11 +14,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Noto+Sans+TC&display=swap" rel="stylesheet">
 
     <style>
+
+.video-wrapper{
+        position: relative;
+        padding-bottom: 56.25%;
+        overflow: hidden;
+    }
+
+    .video-wrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0; 
+        width: 100%;
+        height: 100%;
+    }
+
+
+        #home {
+            max-width: 100%;
+        }
+
         .ui-body-c, .ui-header {
         font-family: 'Noto Sans TC', sans-serif;
 }
 .ui-footer {
         font-family: 'Caveat', cursive;
+}
     </style>
 
     <title>釜山旅遊</title>
@@ -33,19 +54,20 @@
         </div><!-- /header -->
 
         <div role="main" class="ui-content">
-            <p>目錄</p>
+            <h1>目錄</h1>
+            <img src="images/batch_Korea_Busan_City-View_Ashutterstock_172297124.jpg" alt="" width="100%" height="80%">
+            
             <a href="#page1" data-transition="slide" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">歷史地理</a>
             <a href="#page2" data-transition="slide" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">特色景點</a>
             <a href="#page3" data-transition="slide" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">在地美食</a>
-            <a href="#page4" data-transition="slide" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">交通資訊</a>
+            <a href="#page4" data-transition="slide" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">交通住宿</a>
             <a href="#page5" data-transition="slide" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">旅遊資訊</a>
         </div><!-- /content -->
 
         <div data-role="footer" data-position="fixed">
             <h4>Copyright &copy;2020 Wenzao DCAM Misha</h4>
         </div><!-- /footer -->
-
-    </div><!-- /page -->
+    </div><!-- /首頁 -->
 
 
     <!--歷史地理-->
@@ -53,18 +75,33 @@
 
         <div data-role="header">
             <h1>釜山旅遊</h1>
+            <a href="#page0" class="ui-btn ui-icon-home ui-btn-icon-notext ui-btn-corner-all">home</a>
         </div><!-- /header -->
 
         <div role="main" class="ui-content">
-            <p>Hello world歷史地理</p>
-            <a href="#page0" data-transition="slide">回到 首頁</a>
+            <h2>歷史地理介紹</h2>
+
+            <img src="images/010101_img01_chi_B.jpg" alt="" width="100%" height="80%">
+
+            <p>釜山廣域市是位於韓半島東南端的港口城市，人口約為350萬，是韓國第二大城市，也是國際旅遊城市。釜山市共分15個區1個郡，總面積達770.04㎢。釜山集山、海、江於一體，城市內就有6個美麗的海水浴場，並擁有可欣賞沿途美麗風景的海岸散步路和登山路，以及大大小小的溫泉。
+                釜山是海洋性氣候，夏天和冬天的溫差不大，四季分明，是宜居的城市。
+                韓國戰爭以後釜山實現了輝煌的騰飛，已發展成為擁有世界級物流港灣的港灣物流中心城市，通向世界的歐亞大陸樞紐城市。不僅如此，還成功舉辦各種大規模國際活動，有大量世界遊客訪問釜山，成為名副其實的旅遊城市。
+                釜山通過構建電影、影像、內容、金融等產業體系，致力於發展成為環境親和型綠色城市，努力創建富饒城市。</p>
+
+                
         </div><!-- /content -->
 
         <div data-role="footer" data-position="fixed">
-            <h4>Copyright &copy;2020 Wenzao DCAM Misha</h4>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#page2" data-icon="star">特色景點</a></li>
+                    <li><a href="#page3" data-icon="bullets">在地美食</a></li>
+                    <li><a href="#page4" data-icon="bullets">交通住宿</a></li>
+                    <li><a href="#page5" data-icon="info" data-transition="slidedown">旅遊資訊</a></li>
+                </ul>
+            </div>
         </div><!-- /footer -->
-
-    </div><!-- /page -->
+    </div><!-- /歷史地理 -->
 
 
     <!--特色景點-->
@@ -72,18 +109,61 @@
 
         <div data-role="header">
             <h1>釜山旅遊</h1>
+            <a href="#page0" class="ui-btn ui-icon-home ui-btn-icon-notext ui-btn-corner-all">home</a>
         </div><!-- /header -->
 
         <div role="main" class="ui-content">
             <p>Hello world特色景點</p>
-            <a href="#page0" data-transition="slide">回到 首頁</a>
+
+            <div class="video-wrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/iHcygqvlIOM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#">
+                    <img src="images/_MG_7819.JPG">
+                <h2>海王龍宮寺</h2>
+                <p>想欣賞到壯美的海上日出來這就對了</p></a>
+                </li>
+            
+                <li><a href="#">
+                    <img src="images/big_220022.jpg">
+                <h2>海雲臺海水浴場</h2>
+                <p>韓國第一大海水浴場，必去景點NO.1</p></a>
+                </li>
+            
+                <li><a href="#">
+                    <img src="images/big_219913.jpg">
+                <h2>甘川文化村</h2>
+                <p>色彩豐富，風格明快的美麗童話小村莊</p></a>
+                </li>
+
+                <li><a href="#">
+                    <img src="images/big_219955.jpg">
+                <h2>SEA LIFE釜山水族館</h2>
+                <p>與大海來一次親密接觸！</p></a>
+                </li>
+
+                <li><a href="#">
+                    <img src="images/big_219968.jpg">
+                <h2>五六島SKYWAY</h2>
+                <p>驚險刺激的人工觀景臺</p></a>
+                </li>
+            </ul>
+
+            
+            
         </div><!-- /content -->
 
         <div data-role="footer" data-position="fixed">
-            <h4>Copyright &copy;2020 Wenzao DCAM Misha</h4>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#page1" data-icon="bullets">歷史地理</a></li>
+                    <li><a href="#page3" data-icon="bullets">在地美食</a></li>
+                    <li><a href="#page4" data-icon="bullets">交通住宿</a></li>
+                    <li><a href="#page5" data-icon="info" data-transition="slidedown">旅遊資訊</a></li>
+                </ul>
+            </div>
         </div><!-- /footer -->
-
-    </div><!-- /page -->
+    </div><!-- /特色景點 -->
 
     
     <!--在地美食-->
@@ -91,18 +171,57 @@
 
         <div data-role="header">
             <h1>釜山旅遊</h1>
+            <a href="#page0" class="ui-btn ui-icon-home ui-btn-icon-notext ui-btn-corner-all">home</a>
         </div><!-- /header -->
 
         <div role="main" class="ui-content">
-            <p>Hello world在地美食</p>
-            <a href="#page0" data-transition="slide">回到 首頁</a>
+            <h2>在地美食</h2>
+            
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#">
+                    <img src="images/_MG_7819.JPG">
+                <h2>海</h2>
+                <p>想欣賞到壯美這就對了</p></a>
+                </li>
+            
+                <li><a href="#">
+                    <img src="images/big_220022.jpg">
+                <h2>海雲場</h2>
+                <p>國</p></a>
+                </li>
+            
+                <li><a href="#">
+                    <img src="images/big_219913.jpg">
+                <h2>化村</h2>
+                <p>色童話小村莊</p></a>
+                </li>
+
+                <li><a href="#">
+                    <img src="images/big_219955.jpg">
+                <h2>SEA族館</h2>
+                <p>與大海密接觸！</p></a>
+                </li>
+
+                <li><a href="#">
+                    <img src="images/big_219968.jpg">
+                <h2>五六AY</h2>
+                <p>驚險臺</p></a>
+                </li>
+            </ul>
+            
         </div><!-- /content -->
 
         <div data-role="footer" data-position="fixed">
-            <h4>Copyright &copy;2020 Wenzao DCAM Misha</h4>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#page1" data-icon="bullets">歷史地理</a></li>
+                    <li><a href="#page2" data-icon="star">特色景點</a></li>
+                    <li><a href="#page4" data-icon="bullets">交通住宿</a></li>
+                    <li><a href="#page5" data-icon="info" data-transition="slidedown">旅遊資訊</a></li>
+                </ul>
+            </div>
         </div><!-- /footer -->
-
-    </div><!-- /page -->
+    </div><!-- /在地美食 -->
 
 
     <!--交通資訊-->
@@ -110,37 +229,117 @@
 
         <div data-role="header">
             <h1>釜山旅遊</h1>
+            <a href="#page0" class="ui-btn ui-icon-home ui-btn-icon-notext ui-btn-corner-all">home</a>
         </div><!-- /header -->
 
         <div role="main" class="ui-content">
-            <p>交通資訊1</p>
-            <a href="#page0" data-transition="slide">回到 首頁</a>
+            <p>交通住宿</p>
+            
+
+
+            
         </div><!-- /content -->
 
         <div data-role="footer" data-position="fixed">
-            <h4>Copyright &copy;2020 Wenzao DCAM Misha</h4>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#page1" data-icon="bullets">歷史地理</a></li>
+                    <li><a href="#page2" data-icon="star">特色景點</a></li>
+                    <li><a href="#page3" data-icon="bullets">在地美食</a></li>
+                    <li><a href="#page5" data-icon="info" data-transition="slidedown">旅遊資訊</a></li>
+                </ul>
+            </div>
         </div><!-- /footer -->
+    </div><!-- /交通資訊 -->
 
-    </div><!-- /page -->
 
-
-    <!--about-->
+    <!--旅遊資訊-->
     <div data-role="page" id="page5">
 
         <div data-role="header">
             <h1>釜山旅遊</h1>
+            <a href="#page0" class="ui-btn ui-icon-home ui-btn-icon-notext ui-btn-corner-all">home</a>
         </div><!-- /header -->
 
         <div role="main" class="ui-content">
-            <p>旅遊資訊</p>
-            <a href="#page0" data-transition="slide">回到 首頁</a>
+            <h2>旅遊資訊</h2>
+            
+            <div data-role="main" class="ui-content">
+                <div data-role="collapsibleset">
+                <div data-role="collapsible">
+                  <h1>1、簽證</h1>
+                  <p>台灣人赴韓國免簽，並且沒有護照效期的限制，只要持有效護照及來回機票，即可享有90天的釜山旅遊免簽證。</p>
+            <p><strong>小編貼心提醒：</strong>免簽以「天數」計算，非「月份」計算；90天不一定等於3個月唷！</p>
+                </div>
+              
+                <div data-role="collapsible">
+                  <h1>2、電壓</h1>
+                  <p>韓國電壓為220v（伏特）、60Hz（赫茲），插頭形狀為4.8mm圓型兩孔。</p>
+            <p><strong>小編貼心提醒：</strong>圓型兩孔有兩種規格，選購轉接頭時，請務必確保是4.8mm，不要買錯了！</p>
+                </div>
+              
+                <div data-role="collapsible">
+                  <h1>3、緊急聯絡方式</h1>
+                  <p>韓國緊急救援專線：警察局 112/ 消防局：119/ 緊急醫療中心：1339</p>
+            <p>駐韓國台北代表部釜山辦事處 緊急連絡專線（非緊急重大事件切勿撥打）：<br />
+            <i class="fa fa-arrow-right fa- "></i>上班時間（中、韓文）：051-463-7964<br />
+            <i class="fa fa-arrow-right fa- "></i>下班時間（中文）：010-4537-7961</p>
+            <p>中華民國外交部旅外國人急難救助全球免付費專線：800-0885-0885</p>
+                </div>
+
+                <div data-role="collapsible">
+                  <h1>4、退稅</h1>
+                  <p>韓國退稅的分為「事前免稅、即時退稅」及「事後退稅」</p>
+
+
+                  <div data-role="collapsibleset">
+                  <div data-role="collapsible">
+                    <h1>條件：</h1>
+                    <p>在有標示「Tax Free」或「Tax Refund」的商店單筆消費超過3萬韓元</p>
+                  </div>
+
+                  <div data-role="collapsible">
+                    <h1>事前免稅、即時退稅：</h1>
+                    <p>基本上，在觀光地區的商店大部分都有提供現場以免稅價格結帳的服務。只要出示護照，即可完成免稅手續。不過單筆帳單必須在30萬以下；整個旅程購買金額在100萬以下，才可以辦理即時退稅，以免稅金額結帳喔！</p>
+                  </div>
+
+                  <div data-role="collapsible">
+                    <h1>事後免稅：</h1>
+                    <p>如果「退稅金額」（注意：非消費金額）小於₩75000，可以選擇在市區內特定點退稅，或者機場退稅；如果退稅金額大於₩75000，則是只能在機場退稅。</p>
+                  </div>
+
+                  <div data-role="collapsible">
+                    <h1>市區退稅步驟：</h1>
+                    <p>帶著你的退稅單（記得在結帳時跟店員要）→操作自助退稅機→收到退稅金</p>
+                  </div>
+
+                  <div data-role="collapsible">
+                    <h1>機場退稅步驟：</h1>
+                    <p>帶著退稅單→在機場櫃檯或者自助退稅機申請退稅→在出境大廳的櫃檯或自助退稅機領取退稅金</p>
+                  </div>
+                </div>
+                </div>
+
+                <div data-role="collapsible">
+                  <h1>5、網路</h1>
+                  <p>韓國使用4G LTE網路，按照使用需求，可以事先選購SIM卡或租借WiFi機。</p>
+                </div>
+              </div>
+            </div>
+            
         </div><!-- /content -->
 
         <div data-role="footer" data-position="fixed">
-            <h4>Copyright &copy;2020 Wenzao DCAM Misha</h4>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#page1" data-icon="bullets">歷史地理</a></li>
+                    <li><a href="#page2" data-icon="star">特色景點</a></li>
+                    <li><a href="#page3" data-icon="bullets">在地美食</a></li>
+                    <li><a href="#page4" data-icon="bullets" data-transition="slidedown">交通住宿</a></li>
+                </ul>
+            </div>
         </div><!-- /footer -->
-
-    </div><!-- /page -->
+    </div><!-- /旅遊資訊 -->
 
 </body>
 </html>
