@@ -13,6 +13,9 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Noto+Sans+TC&display=swap" rel="stylesheet">
 
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
     <style>
 
 .video-wrapper{
@@ -30,7 +33,7 @@
     }
 
 
-        #home {
+        img {
             max-width: 100%;
         }
 
@@ -51,16 +54,17 @@
 
         <div data-role="header">
             <h1>釜山旅遊</h1>
+            <a href="#page0" class="ui-btn ui-icon-home ui-btn-icon-notext ui-btn-corner-all">home</a>
+            <a href="#myPanel" class="ui-btn ui-icon-search ui-btn-icon-notext ui-btn-corner-all">search</a>
         </div><!-- /header -->
 
         <div role="main" class="ui-content">
-            <h1>目錄</h1>
             <img src="images/batch_Korea_Busan_City-View_Ashutterstock_172297124.jpg" alt="" width="100%" height="80%">
             
             <a href="#page1" data-transition="slide" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">歷史地理</a>
             <a href="#page2" data-transition="slide" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">特色景點</a>
             <a href="#page3" data-transition="slide" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">在地美食</a>
-            <a href="#page4" data-transition="slide" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">交通住宿</a>
+            <a href="#page4" data-transition="slide" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">交通資訊</a>
             <a href="#page5" data-transition="slide" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">旅遊資訊</a>
         </div><!-- /content -->
 
@@ -76,6 +80,7 @@
         <div data-role="header">
             <h1>釜山旅遊</h1>
             <a href="#page0" class="ui-btn ui-icon-home ui-btn-icon-notext ui-btn-corner-all">home</a>
+            <a href="#myPanel" class="ui-btn ui-icon-search ui-btn-icon-notext ui-btn-corner-all">search</a>
         </div><!-- /header -->
 
         <div role="main" class="ui-content">
@@ -94,9 +99,10 @@
         <div data-role="footer" data-position="fixed">
             <div data-role="navbar">
                 <ul>
+                    <li><a href="#page1" data-icon="bullets">歷史地理</a></li>
                     <li><a href="#page2" data-icon="star">特色景點</a></li>
                     <li><a href="#page3" data-icon="bullets">在地美食</a></li>
-                    <li><a href="#page4" data-icon="bullets">交通住宿</a></li>
+                    <li><a href="#page4" data-icon="bullets">交通資訊</a></li>
                     <li><a href="#page5" data-icon="info" data-transition="slidedown">旅遊資訊</a></li>
                 </ul>
             </div>
@@ -110,12 +116,13 @@
         <div data-role="header">
             <h1>釜山旅遊</h1>
             <a href="#page0" class="ui-btn ui-icon-home ui-btn-icon-notext ui-btn-corner-all">home</a>
+            <a href="#myPanel" class="ui-btn ui-icon-search ui-btn-icon-notext ui-btn-corner-all">search</a>
         </div><!-- /header -->
 
         <div role="main" class="ui-content">
             <h2>特色景點</h2>
 
-            <div class="video-wrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/iHcygqvlIOM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            <div class="video-wrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/1arLuWg-m9g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
             <ul data-role="listview" data-inset="true">
                 <li><a href="#">
@@ -157,8 +164,9 @@
             <div data-role="navbar">
                 <ul>
                     <li><a href="#page1" data-icon="bullets">歷史地理</a></li>
+                    <li><a href="#page2" data-icon="star">特色景點</a></li>
                     <li><a href="#page3" data-icon="bullets">在地美食</a></li>
-                    <li><a href="#page4" data-icon="bullets">交通住宿</a></li>
+                    <li><a href="#page4" data-icon="bullets">交通資訊</a></li>
                     <li><a href="#page5" data-icon="info" data-transition="slidedown">旅遊資訊</a></li>
                 </ul>
             </div>
@@ -172,40 +180,111 @@
         <div data-role="header">
             <h1>釜山旅遊</h1>
             <a href="#page0" class="ui-btn ui-icon-home ui-btn-icon-notext ui-btn-corner-all">home</a>
+            <a href="#myPanel" class="ui-btn ui-icon-search ui-btn-icon-notext ui-btn-corner-all">search</a>
         </div><!-- /header -->
 
         <div role="main" class="ui-content">
             <h2>在地美食</h2>
-            
+            <h3>釜山烤肉/燒肉人氣餐廳推介</h3>
+            <p>烤肉是韓國人最喜歡的美食之一，無論在韓劇中還是韓國街道上，都能看到烤肉店的影子。那麼，釜山有哪些值得推薦的烤肉店呢？</p>
+
             <ul data-role="listview" data-inset="true">
-                <li><a href="#">
-                    <img src="images/_MG_7819.JPG">
-                <h2>海</h2>
-                <p>想欣賞到壯美這就對了</p></a>
+                <li><a href="#myPopup1" data-rel="popup" data-position-to="window">
+                    <img src="images/1970.jpeg">
+                <h2>1970伍班長烤肉（오반장）</h2>
+                <p>海雲台人氣烤肉</p></a>
+
+                <div data-role="popup" id="myPopup1" class="ui-content">
+                    <p><strong>必點菜單：</strong>海鷗肉、槽頭肉、調味排骨、大醬湯、涼麵</p>
+                    <p><strong>交通方式：</strong>搭乘地下鐵至「海雲台站」5號出口，直走到第三條路口右轉</p>
+                    <p><strong>地址：</strong>釜山廣域市海雲台區佑洞542-11</p>
+                    <p><strong>營業時間：</strong>11:00～翌日07:00</p>
+                  </div>
                 </li>
             
-                <li><a href="#">
-                    <img src="images/big_220022.jpg">
-                <h2>海雲場</h2>
-                <p>國</p></a>
+                <li><a href="#myPopup1" data-rel="popup" data-position-to="window">
+                    <img src="images/8color.jpg">
+                <h2>八色烤肉（팔색삼겹살）</h2>
+                <p>八種口味烤五花肉</p></a>
+
+                <div data-role="popup" id="myPopup1" class="ui-content">
+                    <p><strong>必點菜單：</strong>八色一桌、豬肉套餐、牛肉套餐</p>
+                    <p><strong>地址：</strong>(1)釜山廣域市中區南浦洞3街7-1 (2)釜山廣域市中區南浦街7-1</p>
+                    <p><strong>交通方式：</strong>(1)搭乘地鐵1號線至「札嘎其站」7號出口 (2)搭乘地鐵1號線至「南浦洞站」1號出口</p>
+                    <p><strong>營業時間：</strong>11:00～23:00 (點餐截至22:00)</p>
+                  </div>
                 </li>
             
-                <li><a href="#">
-                    <img src="images/big_219913.jpg">
-                <h2>化村</h2>
-                <p>色童話小村莊</p></a>
+                <li><a href="#myPopup1" data-rel="popup" data-position-to="window">
+                    <img src="images/ssyouyan.jpg">
+                <h2>荒謬的生肉（엉터리생고기）</h2>
+                <p>釜山無限續烤肉吃到飽</p></a>
+
+                <div data-role="popup" id="myPopup1" class="ui-content">
+                    <p><strong>必點菜單：</strong>無限續添五花肉、大醬湯、部隊湯、生拌牛肉、冷麵、其他料理</p>
+                    <p><strong>地址：</strong>釜山中區 BIFF廣場路 18 2F</p>
+                    <p><strong>交通方式：</strong>搭乘地鐵1號線至「札嘎其站」，7號出口直走，到第一條路口左轉直走在右手邊</p>
+                    <p><strong>營業時間：</strong>11:00～23:50 (點餐截至22:50)</p>
+                  </div>
+                </li>
+            </ul>
+
+
+
+            <h3>釜山傳統韓食人氣餐廳推介</h3>
+            <p>初次到韓國旅行一定要做足功課，光是釜山地區就隱藏著眾多特色的美食，下面，就推介釜山4家傳統韓食人氣餐廳，好吃到飽哦！</p>
+
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#myPopup1" data-rel="popup" data-position-to="window">
+                    <img src="images/twin.jpg">
+                <h2>雙胞胎豬肉湯飯（쌍둥이돼지국밥）</h2>
+                <p>No.1的釜山豬肉湯飯</p></a>
+
+                <div data-role="popup" id="myPopup1" class="ui-content">
+                    <p><strong>必點菜單：</strong>豬肉湯飯、內臟湯飯、水煮豬肉套餐</p>
+                    <p><strong>地址：</strong>釜山市南區大淵洞 887-1</p>
+                    <p><strong>交通方式：</strong>搭乘地鐵2號線至「大淵站」 3號出口</p>
+                    <p><strong>營業時間：</strong>09:00～23:00</p>
+                  </div>
                 </li>
 
-                <li><a href="#">
-                    <img src="images/big_219955.jpg">
-                <h2>SEA族館</h2>
-                <p>與大海密接觸！</p></a>
+                <li><a href="#myPopup1" data-rel="popup" data-position-to="window">
+                    <img src="images/fishcake.jpg">
+                <h2>古來思魚糕（고래사어묵）</h2>
+                <p>《超人回來了》三胞胎大愛</p></a>
+
+                <div data-role="popup" id="myPopup1" class="ui-content">
+                    <p><strong>必點菜單：</strong>魚糕</p>
+                    <p><strong>地址：</strong>釜山廣域市海雲台區佑洞541-1號</p>
+                    <p><strong>交通方式：</strong>搭乘地下鐵至「海雲台站」5號出口</p>
+                    <p><strong>營業時間：</strong>10:00 ~ 22:00</p>
+                  </div>
                 </li>
 
-                <li><a href="#">
-                    <img src="images/big_219968.jpg">
-                <h2>五六AY</h2>
-                <p>驚險臺</p></a>
+                <li><a href="#myPopup1" data-rel="popup" data-position-to="window">
+                    <img src="images/soup.jpg">
+                <h2>五福蔘雞湯（오복삼계탕）</h2>
+                <p>釜山必吃鮑魚韓方蔘雞湯</p></a>
+
+                <div data-role="popup" id="myPopup1" class="ui-content">
+                    <p><strong>必點菜單：</strong>鮑魚蔘雞湯、紅蔘蔘雞湯、韓方蔘雞湯</p>
+                    <p><strong>地址：</strong>釜山市鎮區釜田2洞515-63</p>
+                    <p><strong>交通方式：</strong>搭乘地鐵至「西面站」7號出口，直走對面第一條巷子右轉，直走到底左轉沿樂天百貨圍牆，遇到第一個十字路口右轉</p>
+                    <p><strong>營業時間：</strong>08:00~21:30</p>
+                  </div>
+                </li>
+
+                <li><a href="#myPopup1" data-rel="popup" data-position-to="window">
+                    <img src="images/chicken.jpg">
+                <h2>超巨人炸雞（거인통닭）</h2>
+                <p>白鐘元推介釜山炸一隻雞</p></a>
+
+                <div data-role="popup" id="myPopup1" class="ui-content">
+                    <p><strong>必點菜單：</strong>原味炸雞、調味炸雞和半半炸雞</p>
+                    <p><strong>地址：</strong>釜山市中區中區路47街34號</p>
+                    <p><strong>交通方式：</strong>搭乘地鐵1號線至「札嘎其站」，3號出口</p>
+                    <p><strong>營業時間：</strong>12:00～22:00</p>
+                  </div>
                 </li>
             </ul>
             
@@ -216,7 +295,8 @@
                 <ul>
                     <li><a href="#page1" data-icon="bullets">歷史地理</a></li>
                     <li><a href="#page2" data-icon="star">特色景點</a></li>
-                    <li><a href="#page4" data-icon="bullets">交通住宿</a></li>
+                    <li><a href="#page3" data-icon="bullets">在地美食</a></li>
+                    <li><a href="#page4" data-icon="bullets">交通資訊</a></li>
                     <li><a href="#page5" data-icon="info" data-transition="slidedown">旅遊資訊</a></li>
                 </ul>
             </div>
@@ -230,13 +310,122 @@
         <div data-role="header">
             <h1>釜山旅遊</h1>
             <a href="#page0" class="ui-btn ui-icon-home ui-btn-icon-notext ui-btn-corner-all">home</a>
+            <a href="#myPanel" class="ui-btn ui-icon-search ui-btn-icon-notext ui-btn-corner-all">search</a>
         </div><!-- /header -->
 
         <div role="main" class="ui-content">
-            <p>交通住宿</p>
-            
+            <h2>交通資訊</h2>
+            <img src="images/airport.jpg" alt="" width="100%" height="80%">
+            <div data-role="collapsible">
+                <h1>✈從金海機場出發</h1>
 
+                <div data-role="collapsibleset">
+                    <div data-role="collapsible">
+                        <h1>金海機場巴士</h1>
+                 <p>▶可以直達釜山知名飯店門口</p>
+                 <p>▶往西面、釜山火車站、南浦洞方向：6000韓元，07:00~21:50 (40分鐘一班)</p>
+                 <p>▶往海雲台方向：7000韓元，06:50~22:00 (25分鐘一班)</p>
+                </div>
 
+                <div data-role="collapsible">
+                    <h1>輕軌火車</h1>
+                    <p>▶輕軌火車於2011年開通，不怕塞車也很便宜，與都市地鐵不一樣，但也是個相當方便釜山交通！</p>
+                    <p>▶搭乘輕軌火車的時候，請直接在機器上購買單程票就好，如果有交通卡或是首爾使用的T money卡也可以使用。</p>  
+                    </div>
+
+                    <div data-role="collapsible">
+                        <h1>計程車/包車</h1>
+                    <p>▶從機場到西面市中心約一萬五韓元。建議團體旅遊或多人出遊，可以直接搭成計程車到各個釜山景點，費用平均下來也不貴喔！</p>
+                </div>
+
+                <div data-role="collapsible">
+                    <h1>市區公車</h1>
+                <p>▶從機場到市區最便宜的釜山交通選項，使用現金為1300韓元，使用交通卡為1160韓元</p>
+                </div>
+              </div>
+            </div>
+
+                <img src="images/BusanMRTmap.jpg" alt="" width="100%" height="80%">
+            <div data-role="collapsible">
+                <h1>✈釜山地鐵</h1>
+                <p>1號線(橘)：新平—老圃 2號線(綠)：萇山—梁山 3號線(棕)：水營—大渚 4號線(藍)：美南—安平 輕軌(紫)：沙上—加耶大學</p>
+                <div data-role="collapsibleset">
+                    <div data-role="collapsible">
+                        <h1>釜山地鐵一日票</h1>
+                 <p>▶釜山地鐵只分為一段票及兩段票兩種，使用交通卡分別是1,300韓元及1,500韓元兩種。</p>
+                 <p>▶另外，一日票適合一天需多次進出地鐵站的朋友，一次交通卡要花上1300韓元，但是一日票一張5000韓元就可以不限次數的進出，所以一日當天要進出地鐵站四次以上的話，買一日票就相當划算唷！</p>
+                </div>
+
+                <div data-role="collapsible">
+                    <h1>釜山地鐵票券購買方法</h1>
+             <p>1.在機器上可以選擇要使用的語言，有中英日韓四種語言可以選擇，並點選左側的橘色單次交通卡</p>
+             <p>2.查詢目的地鐵站</p>
+             <p>3.選擇購買數量</p>
+             <p>4.選擇一張一般票，基本車資加上保證金的價格會一併顯示於畫面上</p>
+             <p>5.投入應付金額便能取得交通卡</p>
+             <p>6.用單次交通卡輕觸閘口感應區，發出嗶聲即可通過</p>
+             <p><strong>貼心提醒：</strong>僅能使用韓國紙鈔 1,000/ 5,000/ 10,000韓元與銅板 50/ 100/ 500韓元</p>
+             </div>
+           </div>
+        </div>
+
+        <img src="images/train.jpg" alt="" width="100%" height="80%">
+            <div data-role="collapsible">
+                <h1>✈輕軌電車</h1>
+                <p>機場3號出口出來後，過馬路再右轉就可以抵達輕軌電車的月台，換零錢的機器只能投1,000元的韓幣，購票機器的操作介面容易，但因為輕軌票、一日券和地鐵票長得都一樣，要注意不要走錯月台唷！</p>
+                <p><strong>貼心提醒：</strong>輕軌電車路線跟地鐵銜接，可以參考上面的地鐵路線圖唷！</p>
+            </div>
+
+            <img src="images/airportbus.jpg" alt="" width="100%" height="80%">
+            <div data-role="collapsible">
+                <h1>✈機場巴士（利木津巴士）</h1>
+                <p>從機場前往市區（南浦洞、西面）或海雲台最方便的兩種方式就是機場巴士及地鐵，雖然巴士比地鐵貴，但是可以直達，對於攜帶大型行李的旅客來說是非常便利的選擇！出關之後一直往右前方走，從3號出口出站，往右就可以看到公車站牌，車資上車付給司機即可。</p>
+
+                <div data-role="collapsibleset">
+                    <div data-role="collapsible">
+                        <h1>路線</h1>
+                        <p><strong>西面/釜山火車站 ✔</strong>金海國際機場 → 西面樂天飯店  → 現代百貨公司→ 地鐵釜山鎮站 → 釜山火車站 →東橫INN酒店 →  中央洞→釜山客運碼頭→ 南浦洞 → 忠武洞</p>
+                        <p><strong>海雲台✔</strong>金海國際機場 → 南川洞 →光安洞 → Centum大酒店→ BEXCO→威斯汀朝大酒店→ 皇家天堂大酒店→ -尾浦→長山地铁站→海雲台白醫院→養雲小学</p>
+            </div>
+
+            <div data-role="collapsible">
+                <h1>票價</h1>
+                <p>1.西面/釜山火車站路線：6,000韓元</p>
+                <p>2.海雲台路線：7,000韓元</p>
+            </div>
+        </div>
+    </div>
+
+    <img src="images/viewbus.jpg" alt="" width="100%" height="80%">
+    <div data-role="collapsible">
+        <h1>✈釜山觀光巴士</h1>
+        <p>在釜山，雖然搭乘公車、地鐵等大眾交通工具在各景點間移動非常方便，但是如果搭乘「釜山觀光巴士」可以更輕鬆地玩盡各知名旅遊景點，而且憑1日使用券可自由上下車的紅線、藍線、綠線市區觀光循環路線，以及大型觀光巴士，是個非常方便的釜山交通方式！</p>
+
+        <div data-role="collapsibleset">
+            <div data-role="collapsible">
+                <h1>乘車地點</h1>
+                <p>地鐵釜山站8號出口，釜山火車站1號出口</p>
+       </div>
+
+    <div data-role="collapsible">
+        <h1>票價</h1>
+        <p>1.成人15,000韓元</p>
+        <p>2.兒童與青少年8,000韓元</p>
+    </div>
+</div>
+</div>
+
+<img src="images/fasttrain.jpg" alt="" width="100%" height="80%">
+    <div data-role="collapsible">
+        <h1>✈韓國KTX高速列車</h1>
+        <p>計畫一次把釜山和首爾玩一玩，這當中最適合的交通工具就莫屬韓國KTX高速列車了，它就像台灣的高鐵，從釜山到首爾僅需2.5小時，當天來回更是沒問題，現在更推出了KTX周遊券Korail Pass，讓你在指定日期無限次搭乘，非常划算！</p>
+
+            <div data-role="collapsible">
+                <h1>Korail Pass</h1>
+                <p>KORAIL Pass(Korea Rail Pass)是外國遊客能夠於韓國旅遊時使用的韓國火車通行證，遊客可以根據旅行天數選擇不同的使用天數(2、3、4、5日)，在規定的天數內不限次數、自由搭乘KTX等一般列車以及5種特定觀光列車。</p>
+                <p><strong>票種：</strong>連續型Pass(3/5日) / 選擇型Pass(2/4日)</p>
+       </div>
+</div>
             
         </div><!-- /content -->
 
@@ -246,6 +435,7 @@
                     <li><a href="#page1" data-icon="bullets">歷史地理</a></li>
                     <li><a href="#page2" data-icon="star">特色景點</a></li>
                     <li><a href="#page3" data-icon="bullets">在地美食</a></li>
+                    <li><a href="#page4" data-icon="bullets">交通資訊</a></li>
                     <li><a href="#page5" data-icon="info" data-transition="slidedown">旅遊資訊</a></li>
                 </ul>
             </div>
@@ -259,23 +449,25 @@
         <div data-role="header">
             <h1>釜山旅遊</h1>
             <a href="#page0" class="ui-btn ui-icon-home ui-btn-icon-notext ui-btn-corner-all">home</a>
+            <a href="#myPanel" class="ui-btn ui-icon-search ui-btn-icon-notext ui-btn-corner-all">search</a>
         </div><!-- /header -->
 
         <div role="main" class="ui-content">
             <h2>旅遊資訊</h2>
             
-            <div data-role="main" class="ui-content">
+            <img src="images/tripinfo.png" alt="" width="100%" height="80%">
+
                 <div data-role="collapsibleset">
                 <div data-role="collapsible">
                   <h1>1、簽證</h1>
                   <p>台灣人赴韓國免簽，並且沒有護照效期的限制，只要持有效護照及來回機票，即可享有90天的釜山旅遊免簽證。</p>
-            <p><strong>小編貼心提醒：</strong>免簽以「天數」計算，非「月份」計算；90天不一定等於3個月唷！</p>
+            <p><strong>貼心提醒：</strong>免簽以「天數」計算，非「月份」計算；90天不一定等於3個月唷！</p>
                 </div>
               
                 <div data-role="collapsible">
                   <h1>2、電壓</h1>
                   <p>韓國電壓為220v（伏特）、60Hz（赫茲），插頭形狀為4.8mm圓型兩孔。</p>
-            <p><strong>小編貼心提醒：</strong>圓型兩孔有兩種規格，選購轉接頭時，請務必確保是4.8mm，不要買錯了！</p>
+            <p><strong>貼心提醒：</strong>圓型兩孔有兩種規格，選購轉接頭時，請務必確保是4.8mm，不要買錯了！</p>
                 </div>
               
                 <div data-role="collapsible">
@@ -325,17 +517,18 @@
                   <p>韓國使用4G LTE網路，按照使用需求，可以事先選購SIM卡或租借WiFi機。</p>
                 </div>
               </div>
-            </div>
+
             
         </div><!-- /content -->
 
         <div data-role="footer" data-position="fixed">
             <div data-role="navbar">
                 <ul>
-                    <li><a href="#page1" data-icon="bullets">歷史地理</a></li>
-                    <li><a href="#page2" data-icon="star">特色景點</a></li>
-                    <li><a href="#page3" data-icon="bullets">在地美食</a></li>
-                    <li><a href="#page4" data-icon="bullets" data-transition="slidedown">交通住宿</a></li>
+                    <li><a href="#page1" data-icon="bullets" data-transition="slidedown">歷史地理</a></li>
+                    <li><a href="#page2" data-icon="star" data-transition="slidedown">特色景點</a></li>
+                    <li><a href="#page3" data-icon="bullets" data-transition="slidedown">在地美食</a></li>
+                    <li><a href="#page4" data-icon="bullets" data-transition="slidedown">交通資訊</a></li>
+                    <li><a href="#page5" data-icon="info" data-transition="slidedown">旅遊資訊</a></li>
                 </ul>
             </div>
         </div><!-- /footer -->
