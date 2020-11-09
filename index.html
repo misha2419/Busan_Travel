@@ -17,6 +17,9 @@
 <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
     <style>
+        #text{
+            min-height: 0;
+        }
         .ui-content{
             background-color: rgb(253, 250, 255);
         }
@@ -52,8 +55,17 @@
 </head>
 <body>
 
+
     <!--首頁-->
     <div data-role="page" id="page0">
+
+        <div data-role="panel" id="myPanel" data-position="right">        
+            <div class="ui-field-contain">
+                <h2>找不到你要看的嗎~</h2>
+                <label for="search">搜尋：</label>
+                <input type="search" name="search" id="search" placeholder="搜尋内容...">
+              </div>
+          </div> 
 
         <div data-role="header">
             <h1>釜山旅遊</h1>
@@ -69,6 +81,16 @@
             <a href="#page3" data-transition="slide" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">在地美食</a>
             <a href="#page4" data-transition="slide" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">交通資訊</a>
             <a href="#page5" data-transition="slide" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">旅遊資訊</a>
+
+            <form method="post" action="demo_form.php">
+                <div class="ui-field-contain">
+                    <P>輸入資料取得更多釜山旅遊資訊:</P>
+                    
+                  <label for="email">E-mail:</label>
+                  <input type="email" name="email" id="email" placeholder="你的電子信箱..">
+                </div>
+                <input type="submit" data-inline="true" value="確認">
+              </form>
         </div><!-- /content -->
 
         <div data-role="footer" data-position="fixed">
@@ -79,6 +101,14 @@
 
     <!--歷史地理-->
     <div data-role="page" id="page1">
+
+        <div data-role="panel" id="myPanel" data-position="right">        
+            <div class="ui-field-contain">
+                <h2>找不到你要看的嗎~</h2>
+                <label for="search">搜尋：</label>
+                <input type="search" name="search" id="search" placeholder="搜尋内容...">
+              </div>
+          </div>
 
         <div data-role="header">
             <h1>釜山旅遊</h1>
@@ -115,6 +145,14 @@
 
     <!--特色景點-->
     <div data-role="page" id="page2">
+
+        <div data-role="panel" id="myPanel" data-position="right">        
+            <div class="ui-field-contain">
+                <h2>找不到你要看的嗎~</h2>
+                <label for="search">搜尋：</label>
+                <input type="search" name="search" id="search" placeholder="搜尋内容...">
+              </div>
+          </div>
 
         <div data-role="header">
             <h1>釜山旅遊</h1>
@@ -179,6 +217,14 @@
     
     <!--在地美食-->
     <div data-role="page" id="page3">
+
+        <div data-role="panel" id="myPanel" data-position="right">        
+            <div class="ui-field-contain">
+                <h2>找不到你要看的嗎~</h2>
+                <label for="search">搜尋：</label>
+                <input type="search" name="search" id="search" placeholder="搜尋内容...">
+              </div>
+          </div>
 
         <div data-role="header">
             <h1>釜山旅遊</h1>
@@ -309,6 +355,14 @@
 
     <!--交通資訊-->
     <div data-role="page" id="page4">
+
+        <div data-role="panel" id="myPanel" data-position="right">        
+            <div class="ui-field-contain">
+                <h2>找不到你要看的嗎~</h2>
+                <label for="search">搜尋：</label>
+                <input type="search" name="search" id="search" placeholder="搜尋内容...">
+              </div>
+          </div>
 
         <div data-role="header">
             <h1>釜山旅遊</h1>
@@ -448,6 +502,14 @@
 
     <!--旅遊資訊-->
     <div data-role="page" id="page5">
+
+        <div data-role="panel" id="myPanel" data-position="right">        
+            <div class="ui-field-contain">
+                <h2>找不到你要看的嗎~</h2>
+                <label for="search">搜尋：</label>
+                <input type="search" name="search" id="search" placeholder="搜尋内容...">
+              </div>
+          </div>
 
         <div data-role="header">
             <h1>釜山旅遊</h1>
